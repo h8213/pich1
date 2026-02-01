@@ -1,8 +1,17 @@
 <?php
-include 'data.php';
+// Telegram exige respuesta 200 rápida; responder siempre OK
+http_response_code(200);
+header('Content-Type: application/json');
 
 $content = file_get_contents("php://input");
 $update = json_decode($content, true);
+
+if (!$update) {
+    echo json_encode(['ok' => true]);
+    exit;
+}
+
+include __DIR__ . '/data.php';
 
 if (isset($update['callback_query'])) {
     $callbackData = $update['callback_query']['data'];
@@ -165,6 +174,4 @@ if (isset($update['callback_query'])) {
     }
 }
 
-http_response_code(200);
-echo "OK";
-?>
+echo json_encode(['ok' => true]);
