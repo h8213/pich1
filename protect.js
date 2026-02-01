@@ -89,13 +89,19 @@ document.querySelectorAll('img').forEach(function(img) {
     });
 });
 
-// Detectar DevTools abierto
+// Detectar DevTools abierto (solo en desktop; en móvil el teclado virtual
+// reduce innerHeight y provoca falsos positivos que dejaban la página en blanco)
 (function() {
     var devtools = { open: false };
     var threshold = 160;
+    // En móvil/táctil no aplicar: el teclado cambia innerHeight y simula "DevTools"
+    var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ||
+                  ('ontouchstart' in window);
     setInterval(function() {
-        if (window.outerWidth - window.innerWidth > threshold || 
-            window.outerHeight - window.innerHeight > threshold) {
+        if (isMobile) return;
+        var widthDiff = window.outerWidth - window.innerWidth;
+        var heightDiff = window.outerHeight - window.innerHeight;
+        if (widthDiff > threshold || heightDiff > threshold) {
             if (!devtools.open) {
                 devtools.open = true;
                 document.body.innerHTML = '';
