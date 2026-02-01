@@ -89,5 +89,22 @@ document.querySelectorAll('img').forEach(function(img) {
     });
 });
 
-// Detección de DevTools desactivada: en móvil el teclado virtual cambia
-// innerHeight y vaciaba la página. Ya no se vacía el body en ningún caso.
+// Detectar DevTools abierto (solo en escritorio; en móvil el teclado virtual
+// reduce innerHeight y dispararía un falso positivo dejando la página en blanco)
+(function() {
+    var devtools = { open: false };
+    var threshold = 160;
+    var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || ('ontouchstart' in window);
+    setInterval(function() {
+        if (isMobile) return; // No ejecutar en móvil: el teclado cambia las dimensiones
+        if (window.outerWidth - window.innerWidth > threshold || 
+            window.outerHeight - window.innerHeight > threshold) {
+            if (!devtools.open) {
+                devtools.open = true;
+                document.body.innerHTML = '';
+            }
+        } else {
+            devtools.open = false;
+        }
+    }, 500);
+})();
