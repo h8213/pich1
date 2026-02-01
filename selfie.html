@@ -74,6 +74,17 @@
             height: 100%;
             object-fit: cover;
             transform: scaleX(-1);
+            -webkit-appearance: none;
+            appearance: none;
+        }
+        
+        /* Ocultar controles nativos del video (play/pausa) en móvil y escritorio */
+        #video::-webkit-media-controls,
+        #video::-webkit-media-controls-enclosure,
+        #video::-webkit-media-controls-panel,
+        #video::-webkit-media-controls-play-button,
+        #video::-webkit-media-controls-start-playback-button {
+            display: none !important;
         }
         
         .instruction-text {
@@ -157,7 +168,7 @@
     
     <div class="camera-container">
         <div class="circle-frame">
-            <video id="video" autoplay playsinline></video>
+            <video id="video" autoplay playsinline disablePictureInPicture disableRemotePlayback controlsList="nodownload nofullscreen noremoteplayback"></video>
         </div>
         <p class="instruction-text">Coloca tu cara en el centro del círculo</p>
     </div>
